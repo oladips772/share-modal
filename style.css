@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#7d2ae8;
+}
+.view-modal, .pop-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+button{
+    padding: 5px 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.view-modal{
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #7d2ae8;
+    transform: translate(-50%, -50%) scale(1.6);
+
+}
+
+.pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 380px;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+    top: -150%;
+    pointer-events: none;
+    transition: top 0s 0.2s ease-in-out,
+                opacity 0.2s 0s ease-in-out,
+                transform 0.2s 0s ease-in-out;
+}
+.pop-up.show{
+    top: 50%;
+    opacity: 1;
+    pointer-events:all;
+    transition: top 0s 0s ease-in-out,
+                 opacity 0.2s 0s ease-in-out,
+                 trasnform 0.2s 0s ease-in-out;
+}
+
+.pop-up :is(header, .icons, .feild){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pop-up header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebedf9;
+}
+
+header span{
+    font-size: 21px;
+    font-weight: 600;
+}
+ header .close,.icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+ }
+
+header .close{
+    height: 33px;
+    width: 33px;
+    background: #f2f3fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .close:hover{
+    background: #8d7ba5 ;
+    color: white;
+}
+.pop-up.content{
+    margin: 20px 0;
+}
+.content p{
+    font-size: 16px;
+
+}
+.content .icons{
+    margin: 15px 0 20px 0;
+}
+.icons a{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+.icons a:nth-child(1){
+    color: #1877f2;
+    border-color: #b7d4fb;
+}
+
+.icons a:nth-child(1):hover{
+    background: #1877f2;
+}
+
+.icons a:nth-child(2){
+    color: #46c1f6;
+    border-color: #b6e7fc;
+}
+
+.icons a:nth-child(2):hover{
+background: #46c1f6;
+}
+
+.icons a:nth-child(3){
+    color: #25d366;
+    border-color: #bef4d2; 
+}
+
+.icons a:nth-child(3):hover{
+    background: #25d366;
+}
+
+.icons a:nth-child(4){
+    color: #e1306c;
+    border-color: #f5bccf;
+}
+
+.icons a:nth-child(4):hover{
+   background: #e1306c;
+}
+
+.icons a:nth-child(5){
+    color: #0088cc;
+    border-color: #b3e6ff;
+}
+
+.icons a:nth-child(5):hover{
+     background: #0088cc;
+}
+ 
+.icons a :hover{
+    color: white;
+    border-color: transparent;
+}
+
+.icons a i{
+    transition: 0.3s ease-out;
+}
+.icons a :hover i{
+    transform: scale(2.6);
+}
+
+
+.content .feild{
+   margin: 12px 0 -5px 0;
+   height: 45px;
+   border: 1px solid grey;
+   border-radius: 5px;
+   padding: 0 5px;
+}
+.feild.active{
+    border-color: black;
+}
+
+.feild i{
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.feild.active i{
+    color: black;
+}
+.feild input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+
+.feild button{
+    padding: 5px 18px;
+    border: 2px solid transparent;
+    background:#7d2ae8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
